@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Comic+Neue:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: black;
+    font-family: 'Press Start 2P', monospace;
+  }
+}
+
+@layer components {
+  .cat-walker {
+    position: fixed;
+    bottom: 0.5rem;
+    left: -60px;
+    z-index: 2;
+    width: 56px;
+    height: 32px;
+    pointer-events: none;
+    animation: catwalk 12s linear infinite;
+  }
+}
+
+@keyframes catwalk {
+  0% { left: -60px; }
+  90% { left: calc(100vw + 60px); }
+  100% { left: -60px; }
+}
+  .pixel-border {
+    position: relative;
+    box-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .skill-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(74, 222, 128, 0.2),
+      transparent
+    );
+    transition: 0.5s;
+  }
+
+  .skill-card:hover::before {
+    left: 100%;
+  }
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px rgba(74, 222, 128, 0.5);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(74, 222, 128, 0.8);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
