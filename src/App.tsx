@@ -1,28 +1,5 @@
 import { Github, Linkedin, Mail, ExternalLink, TowerControl as GameController2, Code2, BookOpen, Trophy, Briefcase, Star, Brain, Target } from 'lucide-react';
 
-function CatWalker() {
-  // SVG cat, simple walking style
-  return (
-    <div className="cat-walker" aria-label="walking cat">
-      <svg width="56" height="32" viewBox="0 0 56 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g>
-          <ellipse cx="16" cy="26" rx="8" ry="3" fill="#333" opacity="0.15" />
-          <ellipse cx="40" cy="26" rx="8" ry="3" fill="#333" opacity="0.15" />
-          <path d="M8 24 Q 7 16, 16 16 Q 25 16, 24 24" stroke="#222" strokeWidth="2" fill="#F9D29D" />
-          <ellipse cx="32" cy="20" rx="16" ry="10" fill="#F9D29D" stroke="#222" strokeWidth="2" />
-          <ellipse cx="48" cy="20" rx="5" ry="5" fill="#F9D29D" stroke="#222" strokeWidth="2" />
-          <ellipse cx="18" cy="15" rx="5" ry="5" fill="#F9D29D" stroke="#222" strokeWidth="2" />
-          <ellipse cx="16" cy="13" rx="2.5" ry="2.5" fill="#222" />
-          <ellipse cx="48" cy="18" rx="1.5" ry="1.5" fill="#222" />
-          <path d="M18 25 Q 17 28, 19 28 Q 21 28, 20 25" stroke="#222" strokeWidth="2" fill="none" />
-          <path d="M46 27 Q 47 30, 49 28 Q 51 26, 48 25" stroke="#222" strokeWidth="2" fill="none" />
-          <path d="M13 11 Q 12 7, 16 7 Q 20 7, 19 11" stroke="#222" strokeWidth="2" fill="#F9D29D" />
-        </g>
-      </svg>
-    </div>
-  );
-}
-
 function App() {
   return (
     <div className="min-h-screen bg-black text-green-400 font-mono p-4">
@@ -233,7 +210,7 @@ function App() {
       <footer className="max-w-4xl mx-auto py-8 px-4 text-center text-green-400">
         <p className="text-sm">© 2025 Ibrahim Irfan • Built with React & Tailwind CSS</p>
       </footer>
-      <CatWalker />
+      
     </div>
   );
 }
