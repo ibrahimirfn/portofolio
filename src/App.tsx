@@ -16,17 +16,17 @@ function App() {
             Level 99 Full Stack Developer specializing in React, Django, and Cloud Technologies. 
             Currently on a quest to build scalable web applications and conquer complex coding challenges.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <a href="https://github.com/ibrahimirfn" target="_blank" rel="noopener noreferrer" 
-               className="hover:text-white transition-colors flex items-center gap-2 border-2 border-green-400 p-2 rounded">
+               className="hover:text-white transition-colors flex items-center gap-2 border-2 border-green-400 p-2 rounded w-full sm:w-auto">
               <Github size={24} /> GitHub
             </a>
             <a href="https://www.linkedin.com/in/ibrahimirfanulhaq/" target="_blank" rel="noopener noreferrer" 
-               className="hover:text-white transition-colors flex items-center gap-2 border-2 border-green-400 p-2 rounded">
+               className="hover:text-white transition-colors flex items-center gap-2 border-2 border-green-400 p-2 rounded w-full sm:w-auto">
               <Linkedin size={24} /> LinkedIn
             </a>
             <a href="mailto:ibrahimirfan.main@gmail.com" 
-               className="hover:text-white transition-colors flex items-center gap-2 border-2 border-green-400 p-2 rounded">
+               className="hover:text-white transition-colors flex items-center gap-2 border-2 border-green-400 p-2 rounded w-full sm:w-auto">
               <Mail size={24} /> Email
             </a>
           </div>
